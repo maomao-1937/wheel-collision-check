@@ -1,0 +1,10 @@
+[
+  {"args": ["examples/generate.py"], "exit": 0},
+  {"args": ["wheel_collision_check.py", "--help"], "exit": 0},
+  {"args": ["wheel_collision_check.py", "--format", "json", "examples/generated/alpha-1.0-py3-none-any.whl", "examples/generated/beta-1.0-py3-none-any.whl"], "exit": 0},
+  {"args": ["wheel_collision_check.py", "examples/generated/alpha-1.0-py3-none-any.whl", "examples/generated/collision-1.0-py3-none-any.whl"], "exit": 1},
+  {"args": ["wheel_collision_check.py", "--format", "json", "examples/generated/alpha-1.0-py3-none-any.whl", "examples/generated/tampered-1.0-py3-none-any.whl"], "exit": 2},
+  {"args": ["wheel_collision_check.py", "--format", "json", "examples/generated/alpha-1.0-py3-none-any.whl", "examples/generated/wrapper-1.0-py3-none-any.whl"], "exit": 3},
+  {"args": ["wheel_collision_check.py", "--layout", "merged", "--format", "json", "examples/generated/alpha-1.0-py3-none-any.whl", "examples/generated/spread-1.0-py3-none-any.whl"], "exit": 1},
+  {"args": ["wheel_collision_check.py", "--layout", "split", "--format", "json", "examples/generated/alpha-1.0-py3-none-any.whl", "examples/generated/spread-1.0-py3-none-any.whl"], "exit": 0}
+]
